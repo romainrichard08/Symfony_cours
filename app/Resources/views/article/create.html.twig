@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+Création d'article
+
+{{ form_start(form) }}
+{{ form_row(form.Title) }}
+
+{{ form_row(form.Content) }}
+{{ form_label(form.Content) }}
+
+<input type="submit" value="create" />
+{{ form_end(form) }}
+
+{% endblock %}
